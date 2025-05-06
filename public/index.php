@@ -15,6 +15,8 @@ require __DIR__.'/../vendor/autoload.php';
 
 // Bootstrap Laravel and handle the request...
 /** @var Application $app */
+$host = '0.0.0.0'; // Đảm bảo lắng nghe trên tất cả các IP
+$port = env('PORT', 8080);
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $app->handleRequest(Request::capture());
