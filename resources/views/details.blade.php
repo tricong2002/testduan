@@ -12,6 +12,6 @@
 
 <form action="{{ route('checkan', $data->id) }}" method="post">
     @csrf
-    <button type="submit" name="answer" value="1">Đúng</button>
+    <button type="submit" name="answer" value="1">ssĐúng</button>
     <button type="submit" name="answer" value="2">Sai</button>
 </form>
